@@ -7,14 +7,6 @@ return {
     },
   },
 
-  -- Honestly, I can't remember
-  {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
-
   -- Use tab instead of enter to select completion
   {
     "saghen/blink.cmp",
@@ -24,9 +16,6 @@ return {
       },
     },
   },
-
-  -- Disable mini.pairs to use endwise instead
-  -- { "echasnovski/mini.pairs", enabled = true },
 
   -- Disable flash.nvim, really annoying
   { "folke/flash.nvim", enabled = false },
