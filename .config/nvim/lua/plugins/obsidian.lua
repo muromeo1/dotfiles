@@ -8,7 +8,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/vaults/me",
+        path = "~/vaults/notes",
       },
     },
     picker = {
@@ -32,7 +32,8 @@ return {
   -- Search by file name
   vim.keymap.set("n", "<leader>os", function()
     Snacks.picker.files({
-      dirs = { "~/vaults/me" },
+      cwd = "~/vaults/notes",
+      dirs = { "~/vaults/notes" },
       follow = true,
     })
   end, { desc = "Obsidian search" }),
