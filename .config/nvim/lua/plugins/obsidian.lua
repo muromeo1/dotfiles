@@ -19,18 +19,23 @@ return {
     note_id_func = function(title)
       return title:gsub(" ", "-"):lower()
     end,
+
+    -- Disable UI features that hide checkbox text
+    ui = {
+      enable = false,
+    },
   },
 
-  vim.keymap.set("n", "<leader>oo", ":Obsidian<CR>"),
-  vim.keymap.set("n", "<leader>on", ":Obsidian new<CR>"),
-  vim.keymap.set("n", "<leader>ot", ":Obsidian today<CR>"),
-  vim.keymap.set("n", "<leader>oy", ":Obsidian yesterday<CR>"),
+  vim.keymap.set("n", "<leader>Oo", ":Obsidian<CR>"),
+  vim.keymap.set("n", "<leader>On", ":Obsidian new<CR>"),
+  vim.keymap.set("n", "<leader>Ot", ":Obsidian today<CR>"),
+  vim.keymap.set("n", "<leader>Oy", ":Obsidian yesterday<CR>"),
 
   -- Live grep
-  vim.keymap.set("n", "<leader>of", ":Obsidian search<CR>", { desc = "Obsidian live grep" }),
+  vim.keymap.set("n", "<leader>Of", ":Obsidian search<CR>", { desc = "Obsidian live grep" }),
 
   -- Search by file name
-  vim.keymap.set("n", "<leader>os", function()
+  vim.keymap.set("n", "<leader>Os", function()
     Snacks.picker.files({
       cwd = "~/vaults/notes",
       dirs = { "~/vaults/notes" },
