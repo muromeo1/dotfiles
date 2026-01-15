@@ -2,6 +2,8 @@ return {
   "sudo-tee/opencode.nvim",
   config = function()
     require("opencode").setup({
+      preferred_picker = "fzf",
+      default_mode = "OpenCoder",
       keymap = {
         input_window = {
           ["<tab>"] = { "switch_mode", mode = { "n", "i" } }, -- Switch between modes (build/plan)
@@ -27,6 +29,6 @@ return {
       ft = { "markdown", "Avante", "copilot-chat", "opencode_output" },
     },
     "saghen/blink.cmp",
-    "folke/snacks.nvim",
+    "ibhagwan/fzf-lua",
   },
 }

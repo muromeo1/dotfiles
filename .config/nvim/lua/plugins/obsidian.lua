@@ -12,7 +12,7 @@ return {
       },
     },
     picker = {
-      name = "snacks.pick",
+      name = "fzf-lua",
     },
 
     -- Save id as name.gsub.lower
@@ -23,6 +23,14 @@ return {
     -- Disable UI features that hide checkbox text
     ui = {
       enable = false,
+    },
+
+    frontmatter = {
+      enabled = false,
+    },
+
+    footer = {
+      enabled = false,
     },
   },
 
@@ -36,10 +44,8 @@ return {
 
   -- Search by file name
   vim.keymap.set("n", "<leader>Os", function()
-    Snacks.picker.files({
+    require("fzf-lua").files({
       cwd = "~/vaults/notes",
-      dirs = { "~/vaults/notes" },
-      follow = true,
     })
   end, { desc = "Obsidian search" }),
 }
