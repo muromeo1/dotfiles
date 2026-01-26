@@ -6,6 +6,8 @@ Automatically install a nerdy env with some cool stuff:
 - 🚀 [Starship](https://starship.rs/)
 - 💤 [LazyVim](https://www.lazyvim.org/)
 - 🔥 [Tmux](https://github.com/tmux/tmux/wiki)
+- 🐱 [Kitty](https://sw.kovidgoyal.net/kitty/)
+- 🤖 [OpenCode](https://opencode.ai/)
 - 🐈 [Catppuccin](https://github.com/catppuccin/catppuccin)
 
 Also uses [Stow](https://www.gnu.org/software/stow/manual/stow.html) to easy keep track of changes in this dotfiles.

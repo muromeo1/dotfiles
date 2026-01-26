@@ -55,6 +55,15 @@ return {
         enabled = true,
         backend = "kitty",
       },
+      picker = {
+        sources = {
+          explorer = {
+            layout = {
+              hidden = { "input" },
+            },
+          },
+        },
+      },
     },
   },
 
