@@ -6,7 +6,17 @@ return {
       default_mode = "OpenCoder",
       keymap = {
         input_window = {
-          ["<tab>"] = { "switch_mode", mode = { "n", "i" } }, -- Switch between modes (build/plan)
+          ["<tab>"] = { "switch_mode", mode = { "n", "i" }, desc = "Switch between modes (build/plan)" },
+          ["<cr>"] = {
+            "submit_input_prompt",
+            mode = { "n" },
+            desc = "Submit prompt (normal mode)",
+          },
+          ["<C-s>"] = {
+            "submit_input_prompt",
+            mode = { "i" },
+            desc = "Submit prompt (normal mode)",
+          },
         },
       },
       ui = {
