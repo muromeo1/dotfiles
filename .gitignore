@@ -1,2 +1,3 @@
 .config/nvim/lazy-lock.json
 .config/github-copilot/
+.config/github-copilot/versions.json

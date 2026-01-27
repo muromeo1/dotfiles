@@ -1,6 +1,27 @@
+local vault = vim.fn.expand("~") .. "/vaults/notes"
+
 return {
   "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
+  event = {
+    "BufReadPre " .. vault .. "/**.md",
+    "BufNewFile " .. vault .. "/**.md",
+  },
+  cmd = { "Obsidian" },
+  keys = {
+    { "<leader>Oo", "<cmd>Obsidian<cr>", desc = "Obsidian" },
+    { "<leader>On", "<cmd>Obsidian new<cr>", desc = "Obsidian new" },
+    { "<leader>Ot", "<cmd>Obsidian today<cr>", desc = "Obsidian today" },
+    { "<leader>Oy", "<cmd>Obsidian yesterday<cr>", desc = "Obsidian yesterday" },
+    { "<leader>Of", "<cmd>Obsidian search<cr>", desc = "Obsidian live grep" },
+    {
+      "<leader>Os",
+      function()
+        require("fzf-lua").files({ cwd = vault })
+      end,
+      desc = "Obsidian search files",
+    },
+  },
   ---@module 'obsidian'
   ---@type obsidian.config
   opts = {
@@ -8,7 +29,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/vaults/notes",
+        path = vault,
       },
     },
     picker = {
@@ -33,19 +54,4 @@ return {
       enabled = false,
     },
   },
-
-  vim.keymap.set("n", "<leader>Oo", ":Obsidian<CR>"),
-  vim.keymap.set("n", "<leader>On", ":Obsidian new<CR>"),
-  vim.keymap.set("n", "<leader>Ot", ":Obsidian today<CR>"),
-  vim.keymap.set("n", "<leader>Oy", ":Obsidian yesterday<CR>"),
-
-  -- Live grep
-  vim.keymap.set("n", "<leader>Of", ":Obsidian search<CR>", { desc = "Obsidian live grep" }),
-
-  -- Search by file name
-  vim.keymap.set("n", "<leader>Os", function()
-    require("fzf-lua").files({
-      cwd = "~/vaults/notes",
-    })
-  end, { desc = "Obsidian search" }),
 }
