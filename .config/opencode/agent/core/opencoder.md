@@ -9,6 +9,7 @@ version: 1.0.0
 author: opencode
 mode: primary
 temperature: 0.1
+model: github-copilot/claude-opus-4.5
 
 # Dependencies
 dependencies:

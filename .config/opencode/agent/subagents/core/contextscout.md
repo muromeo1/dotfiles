@@ -7,7 +7,7 @@ category: subagents/core
 type: subagent
 version: 4.0.0
 author: darrenhinde
-model: "opencode/grok-code"
+model: github-copilot/grok-code-fast-1
 
 # Agent Configuration£
 mode: subagent

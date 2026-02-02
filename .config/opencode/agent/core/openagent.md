@@ -9,6 +9,7 @@ version: 1.0.0
 author: opencode
 mode: primary
 temperature: 0.2
+model: github-copilot/gpt-5.2
 
 # Dependencies
 dependencies:
