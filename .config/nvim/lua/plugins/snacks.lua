@@ -28,20 +28,8 @@ return {
     },
     dashboard = {
       preset = {
-        pick = function(cmd, opts)
-          return LazyVim.pick(cmd, opts)()
-        end,
-        -- stylua: ignore
-        keys = {
-          { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
-          { icon = " ", key = "c", desc = "Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
-          { icon = " ", key = "t", desc = "Today note", action = ":Obsidian today" },
-          { icon = " ", key = "y", desc = "Yesterday note", action = ":Obsidian yesterday" },
-          { icon = " ", key = "s", desc = "Restore Session", section = "session" },
-          { icon = " ", key = "x", desc = "Lazy Extras", action = ":LazyExtras" },
-          { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
-          { icon = " ", key = "q", desc = "Quit", action = ":qa" },
-        },
+        pick = {},
+        keys = {},
       },
     },
   },
