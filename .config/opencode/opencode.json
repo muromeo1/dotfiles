@@ -1,6 +1,5 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": ["~/.config/opencode/learnings/*.md"],
   "default_agent": "OpenAgent",
   "permission": {
     "read": "allow"

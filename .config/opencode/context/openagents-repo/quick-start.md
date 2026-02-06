@@ -1,4 +1,4 @@
-# OpenAgents Repository - Quick Start
+# OpenAgents Control Repository - Quick Start
 
 **Purpose**: Get oriented in this repo in 2 minutes
 
@@ -6,7 +6,7 @@
 
 ## What Is This Repo?
 
-OpenAgents is an AI agent framework with:
+OpenAgents Control is an AI agent framework with:
 - **Category-based agents** (core, development, content, data, product, learning)
 - **Eval framework** for testing agent behavior
 - **Registry system** for component distribution
@@ -53,6 +53,8 @@ Before working on this repo, understand these 4 systems:
 | Debug issue | `guides/debugging.md` |
 | Find files | `lookup/file-locations.md` |
 | Create release | `guides/creating-release.md` |
+| Write content or copy | `core-concepts/categories.md` + `../content-creation/principles/navigation.md` |
+| Use Claude Code helpers | `core-concepts/agents.md` + `guides/adding-agent.md` + `../to-be-consumed/claude-code-docs/create-subagents.md` |
 
 ---
 
@@ -163,5 +165,5 @@ opencode-agents/
 
 ---
 
-**Last Updated**: 2025-12-10  
-**Version**: 0.5.0
+**Last Updated**: 2026-01-13  
+**Version**: 0.5.1

@@ -22,7 +22,7 @@ return {
           },
         },
         output = {
-          always_scroll_to_bottom = true,
+          -- always_scroll_to_bottom = true,
         },
       },
     })
