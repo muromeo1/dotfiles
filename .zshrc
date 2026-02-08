@@ -15,6 +15,7 @@ plug "chivalryq/git-alias"
 alias bex='bundle exec'
 alias rc='bex rails c'
 alias rs='bex rails s'
+alias k='kubectl'
 
 if type rg &> /dev/null; then
 	export IGNORED_FOLDERS='.git,node_modules,vendor,tmp,cache,package-lock.json'
@@ -42,3 +43,6 @@ source <(fzf --zsh)
 autoload -Uz compinit
 compinit
 
+
+# opencode
+export PATH=/Users/muriloromeo/.opencode/bin:$PATH
