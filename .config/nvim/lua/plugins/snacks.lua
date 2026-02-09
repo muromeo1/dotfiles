@@ -15,6 +15,11 @@ return {
           layout = {
             hidden = { "input" },
           },
+          -- Show hidden files (files starting with .)
+          hidden = true,
+          -- Git integration - show untracked files
+          git_status = true,
+          git_untracked = true,
           -- On open `nvim .` focus on the main window, not the tree
           on_show = function(picker)
             vim.schedule(function()
