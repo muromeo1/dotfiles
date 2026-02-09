@@ -1,0 +1,8 @@
+node_modules
+package.json
+bun.lock
+
+# Ignore project-specific/private context files
+context/project-intelligence/*-callbell.md
+context/project-intelligence/callbell/
+context/paths.json
