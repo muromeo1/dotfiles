@@ -16,7 +16,7 @@ return {
             hidden = { "input" },
           },
           -- Show hidden files (files starting with .)
-          hidden = true,
+          hidden = false,
           -- Git integration - show untracked files
           git_status = true,
           git_untracked = true,
