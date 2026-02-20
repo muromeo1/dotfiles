@@ -4,7 +4,7 @@ return {
   config = function()
     require("opencode").setup({
       preferred_picker = "fzf",
-      default_mode = "OpenCoder",
+      default_mode = "orchestrator",
       keymap = {
         input_window = {
           ["<tab>"] = { "switch_mode", mode = { "n", "i" }, desc = "Switch between modes (build/plan)" },
