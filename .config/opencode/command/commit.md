@@ -156,3 +156,7 @@ Example commit sequence:
 - **Always run and push the commit**: You don't need to ask for confirmation unless there is a big issue or error `git push`.
 - **Message quality**: Ensure commit messages are clear, concise, and follow conventional format
 - **Success feedback**: After successful commit, show commit hash and brief summary
+
+## Important!
+
+- _NEVER_ push the commit without asking for permission!
