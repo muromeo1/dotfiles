@@ -3,7 +3,7 @@
 cd ~/
 
 echo 'Installing dependencies...'
-brew install stow git curl ripgrep fd fontconfig unzip fzf imagemagick ghostscript tectonic mermaid-cli utftex anomalyco/tap/opencode
+brew install stow git curl ripgrep fd fontconfig unzip fzf imagemagick ghostscript tectonic mermaid-cli utftex anomalyco/tap/opencode coreutils
 
 echo 'Installing asdf'
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
