@@ -1,5 +1,5 @@
 # Will append brew to linux based systems
-if [[ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]]; then
+if [[ "$(uname -s)" == Linux* ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 
@@ -16,13 +16,6 @@ alias bex='bundle exec'
 alias rc='bex rails c'
 alias rs='bex rails s'
 alias k='kubectl'
-
-if type rg &> /dev/null; then
-	export IGNORED_FOLDERS='.git,node_modules,vendor,tmp,cache,package-lock.json'
-	export FZF_IGNORED_FOLDERS="--glob '!{$IGNORED_FOLDERS}'"
-	export FZF_DEFAULT_COMMAND="rg --files --no-ignore --hidden --follow $FZF_IGNORED_FOLDERS"
-	export FZF_DEFAULT_OPTS='-m --height 50% --border'
-fi
 
 # Ctrl + space to clear screen
 bindkey '^ ' clear-screen
