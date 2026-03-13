@@ -3,17 +3,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
-    },
-  },
-
-  -- Use tab instead of enter to select completion
-  {
-    "saghen/blink.cmp",
-    opts = {
-      keymap = {
-        preset = "super-tab",
-      },
+      colorscheme = "catppuccin-mocha",
     },
   },
 
