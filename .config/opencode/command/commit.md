@@ -1,5 +1,6 @@
 ---
 description: Create well-formatted commits with conventional commit messages and emoji
+agent: atlas
 ---
 
 # Commit Command
