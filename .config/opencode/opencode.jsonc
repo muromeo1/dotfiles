@@ -1,12 +1,30 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["oh-my-opencode@latest"],
+  "plugin": [
+    "oh-my-openagent@latest"
+  ],
   "agent": {
     "plan": {
       "disable": true,
     },
     "build": {
       "disable": true,
+    },
+  },
+  "mcp": {
+    "outline": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "-p",
+        "outline-mcp-server@latest",
+        "outline-mcp-server-stdio",
+      ],
+    // "environment": {
+    //   "OUTLINE_API_KEY": "ENV VARIABLE",
+    //   "OUTLINE_API_URL": "ENV VARIABLE"
+    // },
     },
   },
 }
