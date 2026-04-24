@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "agents": {
     "sisyphus": {
-      "model": "github-copilot/claude-opus-4.6",
-      "variant": "max"
+      "model": "anthropic/claude-opus-4-7",
+      "variant": "default"
     },
     "hephaestus": {
       "model": "github-copilot/gpt-5.3-codex",
@@ -23,19 +23,19 @@
       "model": "github-copilot/gemini-3-flash-preview"
     },
     "prometheus": {
-      "model": "github-copilot/claude-opus-4.6",
-      "variant": "max"
+      "model": "anthropic/claude-opus-4-7",
+      "variant": "default"
     },
     "metis": {
-      "model": "github-copilot/claude-opus-4.6",
-      "variant": "max"
+      "model": "anthropic/claude-opus-4-7",
+      "variant": "default"
     },
     "momus": {
       "model": "github-copilot/gpt-5.4",
       "variant": "medium"
     },
     "atlas": {
-      "model": "github-copilot/claude-sonnet-4.6"
+      "model": "anthropic/claude-sonnet-4-6"
     }
   },
   "categories": {
@@ -55,13 +55,13 @@
       "variant": "high"
     },
     "quick": {
-      "model": "github-copilot/claude-haiku-4.5"
+      "model": "anthropic/claude-haiku-4-5"
     },
     "unspecified-low": {
-      "model": "github-copilot/claude-sonnet-4.6"
+      "model": "anthropic/claude-sonnet-4-6"
     },
     "unspecified-high": {
-      "model": "github-copilot/claude-sonnet-4.6"
+      "model": "anthropic/claude-sonnet-4-6"
     },
     "writing": {
       "model": "github-copilot/gemini-3-flash-preview"
