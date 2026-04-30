@@ -1,4 +1,7 @@
 node_modules
 package.json
+package-lock.json
 bun.lock
 .gitignore
+oh-my-openagent.json
+.sisyphus

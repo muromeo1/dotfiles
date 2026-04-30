@@ -1,0 +1,7 @@
+{
+  "default": "go",
+  "rules": [
+    { "match": "~/apps/**", "profile": "callbell" },
+    { "match": "~/dotfiles/**", "profile": "go" }
+  ]
+}
