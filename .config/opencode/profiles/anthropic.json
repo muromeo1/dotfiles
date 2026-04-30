@@ -1,29 +1,5 @@
 {
-  "opencode": {
-    "mcp": {
-      "outline": {
-        "enabled": true,
-        "type": "local",
-        "command": [
-          "npx",
-          "-y",
-          "-p",
-          "outline-mcp-server@latest",
-          "outline-mcp-server-stdio"
-        ]
-      },
-      "linear": {
-        "enabled": true,
-        "type": "remote",
-        "url": "https://mcp.linear.app/mcp"
-      },
-      "sentry": {
-        "enabled": true,
-        "type": "remote",
-        "url": "https://mcp.sentry.dev/mcp"
-      }
-    }
-  },
+  "opencode": {},
   "oh_my_openagent": {
     "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
     "git_master": {
@@ -34,12 +10,15 @@
     "agents": {
       "sisyphus": {
         "model": "anthropic/claude-opus-4-7",
-        "variant": "default"
+        "variant": "max"
       },
-      "oracle": { "model": "opencode-go/deepseek-v4-pro" },
-      "librarian": { "model": "opencode-go/deepseek-v4-flash" },
-      "explore": { "model": "opencode-go/deepseek-v4-flash" },
-      "multimodal-looker": { "model": "opencode-go/kimi-k2.6" },
+      "oracle": {
+        "model": "anthropic/claude-opus-4-7",
+        "variant": "max"
+      },
+      "librarian": { "model": "anthropic/claude-haiku-4-5" },
+      "explore": { "model": "anthropic/claude-haiku-4-5" },
+      "multimodal-looker": { "model": "anthropic/claude-sonnet-4-6" },
       "prometheus": {
         "model": "anthropic/claude-opus-4-7",
         "variant": "max"
@@ -56,17 +35,23 @@
       "sisyphus-junior": { "model": "anthropic/claude-sonnet-4-6" }
     },
     "categories": {
-      "visual-engineering": { "model": "opencode-go/mimo-v2.5" },
+      "visual-engineering": {
+        "model": "anthropic/claude-opus-4-7",
+        "variant": "max"
+      },
       "ultrabrain": {
         "model": "anthropic/claude-opus-4-7",
-        "variant": "default"
+        "variant": "max"
       },
-      "deep": { "model": "opencode-go/deepseek-v4-pro" },
-      "quick": { "model": "opencode-go/deepseek-v4-flash" },
+      "deep": {
+        "model": "anthropic/claude-opus-4-7",
+        "variant": "max"
+      },
+      "quick": { "model": "anthropic/claude-haiku-4-5" },
       "unspecified-low": { "model": "anthropic/claude-sonnet-4-6" },
       "unspecified-high": {
         "model": "anthropic/claude-opus-4-7",
-        "variant": "default"
+        "variant": "max"
       },
       "writing": { "model": "anthropic/claude-sonnet-4-6" }
     }
