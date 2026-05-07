@@ -1,7 +1,7 @@
 {
-  "default": "go",
+  "default": "go-v2",
   "rules": [
     { "match": "~/apps/**", "profile": "callbell" },
-    { "match": "~/dotfiles/**", "profile": "go" }
+    { "match": "~/dotfiles/**", "profile": "go-v2" }
   ]
 }
