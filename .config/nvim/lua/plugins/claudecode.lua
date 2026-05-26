@@ -14,9 +14,27 @@ return {
     terminal = {
       snacks_win_opts = {
         position = "float",
-        width = 190,
-        height = 40,
+        width = 0.8,
+        height = 0.9,
         border = "rounded",
+        on_win = function(self)
+          if not self.buf or not vim.api.nvim_buf_is_valid(self.buf) then
+            return
+          end
+          local line_count = vim.api.nvim_buf_line_count(self.buf)
+          local first = vim.api.nvim_buf_get_lines(self.buf, 0, 1, false)[1] or ""
+          if line_count <= 1 and first == "" then
+            return
+          end
+          vim.defer_fn(function()
+            if self.buf and vim.api.nvim_buf_is_valid(self.buf) then
+              local chan = vim.bo[self.buf].channel
+              if chan and chan > 0 then
+                vim.api.nvim_chan_send(chan, "\012")
+              end
+            end
+          end, 50)
+        end,
         keys = {
           claude_hide = {
             toggle_key,

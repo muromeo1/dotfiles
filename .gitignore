@@ -3,3 +3,4 @@
 .config/github-copilot/versions.json
 .sisyphus
 .omc
+package-lock.json
